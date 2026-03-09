@@ -1,25 +1,37 @@
-## Šis resursas naudojamas patvirtinti jūsų serverį mūsų svetaineje naudojant vieno naudojimo tokenu.
-## This resource registers your server on the website using a single-use Token.
+# gta_listas
 
-Rekomenduojama palikti resurso pavadinimą `gta_listas`
-Recommended folder/resource name: `gta_listas`
+## LT
 
+### Aprašymas
+Šis resursas naudojamas patvirtinti jūsų serverį mūsų svetainėje naudojant vieno naudojimo tokeną.
 
-## Setupas.
-## Setup.
+### Rekomenduojamas pavadinimas
+Rekomenduojama palikti resurso pavadinimą `gta_listas`.
+
+### Setupas
 Norint susetupinti, prašom sekti instrukcijas `Pridėti Serverį` puslapyje.
-To set it up, please follow the instruction on `Add a server` page.
 
+### Papildoma informacija
+- Tokenas gali būti panaudotas tik vieną kartą ir nebegalioja po 24 valandų.
+- Tokenai generuojami tik `Pridėti Serverį` puslapyje.
+- `server_id` tikrinimas nepavyksta, jei įrašytas serverio ID ir serverio ID, kuriame įkeltas resursas, neatitinka.
+- Jei turite daugiau problemų, prašom paskaityti DUK puslapio apačioje arba ieškoti pagalbos mūsų Discord serveryje.
+- Kodėl `server.lua` failas užšifruotas? Kadangi naudojame API patvirtinimui. Mūsų ir jūsų saugumui failas užšifruotas, kad apsaugotume API endpointus.
 
-## Papildoma informacija.
-- Tokenas gali būti tik panaudotas vieną kartą, ir nebegalioja po 24 valandų.
-- Tokenai generuojami TIK `Pridėti Serverį` puslapyje.
-- `server_id` tikrinimas failinimas, jei įrašytas serverio ID ir serverio ID kuriame įkeltas resursas neatitinka.
-- Jei turite daugiau problemų, prašom paskaityti DUK puslapio apačioje, arba ieškotis pagalbos mūsų discorde.
-- Kodėl server.lua failas užencryptintas? Kadangi mes naudojam API patvirtinimui/ Mūsų bei jūsų saugumui failas užencryptintas, kad apsaugoti mūsų API Endpointus.
-## Extra information.
-- Tokens are single-use and expires in 24 hours.
-- Tokens are issued only by your website `Add Server` page.
-- `server_id` check fails, if the added server ID and server ID from where the resource is added do not match.
-- If you have any more issues, please review the FAQ at the bottom of the page, or check our discord for support.
-- Why is your server.lua file encrypted? That is done because we use API's for confirmation. For our own and your safety, we encrypt those files, to secure our API Endpoints.
+## EN
+
+### Description
+This resource registers your server on the website using a single-use token.
+
+### Recommended Name
+Recommended folder/resource name: `gta_listas`.
+
+### Setup
+To set it up, please follow the instructions on the `Add a Server` page.
+
+### Extra Information
+- Tokens are single-use and expire in 24 hours.
+- Tokens are issued only on the website `Add a Server` page.
+- The `server_id` check fails if the added server ID does not match the server ID where this resource is running.
+- If you have any more issues, please review the FAQ at the bottom of the page or check our Discord for support.
+- Why is `server.lua` encrypted? We use APIs for verification. For both your safety and ours, this file is encrypted to protect API endpoints.
